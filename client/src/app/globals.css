@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: var(--primary);
+}
+
+:root {
+  --primary: #010618;
+  --secondary: #141b33;
+  --font-primary: white;
+  --font-secondary: #979aa9;
+  --font-third: #6b6f81;
+  --selected: #76a4ea;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
