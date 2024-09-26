@@ -1,4 +1,4 @@
-import Today from "./components/Today";
+import Today from "./Today/page";
 
 export default function Home() {
   return (

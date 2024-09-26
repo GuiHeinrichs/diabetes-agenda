@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header'
-import Hero from './Hero'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
 
 export default function Today() {
   return (
