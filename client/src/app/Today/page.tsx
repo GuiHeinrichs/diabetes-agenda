@@ -4,7 +4,7 @@ import Hero from '../components/Hero'
 
 export default function Today() {
   return (
-    <div className='w-full h-screen m-auto'>
+    <div className='w-full h-full m-auto'>
       <Header />
       <Hero />
     </div>
