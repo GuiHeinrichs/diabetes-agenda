@@ -13,6 +13,7 @@ body {
   --font-secondary: #979aa9;
   --font-third: #6b6f81;
   --selected: #76a4ea;
+  --background:var(--primary);
 }
 
 * {
