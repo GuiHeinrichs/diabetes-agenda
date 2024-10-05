@@ -3,8 +3,8 @@ import Today from "./Today/page";
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 
 const config = {
-  initialColorMode: 'dark' as 'dark', // Definindo o dark mode como padrão
-  useSystemColorMode: false, // Ignora o tema do sistema operacional
+  initialColorMode: 'dark' as 'dark',
+  useSystemColorMode: false,
 };
 
 export default function Home() {

@@ -21,13 +21,18 @@ import { Select } from '@chakra-ui/react'
 export default function Hero() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const [periodValue, setPeriodValue] = useState('0');
+  const [periodValue, setPeriodValue] = useState('1');
   const [actionTypeValue, setActionTypeValue] = useState('0');
-
   const actionValue : any = useRef(null);
 
   const handleActionChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setActionTypeValue(event.target.value);
+  };
+
+  const handleOnSave = () => {
+    console.log(periodValue);
+    console.log(actionTypeValue);
+    console.log(actionValue.current.value);
   };
 
   return (
@@ -79,7 +84,7 @@ export default function Hero() {
             <Button variant={'ghost'} colorScheme='red' mr={3} onClick={onClose}>
               Fechar
             </Button>
-            <Button colorScheme='green'>Salvar</Button>
+            <Button colorScheme='green' onClick={handleOnSave}>Salvar</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
